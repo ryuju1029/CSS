@@ -1,0 +1,59 @@
+.intoduction {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.lead {
+  margin-bottom:0.5em;
+  text-align: center;
+  font-size:36px;
+  font-weight: bold;
+}
+
+/* class属性にprimaryだけが入っている要素を選択 */
+/* [class="primary"]{
+  color: green;
+} */
+
+button:first-child {
+  color: green;
+}
+
+button {
+  color: red;
+}
+
+
+/* > を使うことで子要素直下の要素のみが対象となる */
+#sidebar {
+  border:1 solid #ccc;
+  width: 300px;
+  background-color: #fafafa;
+}
+#sidebar > ul > li {
+  border-bottom: 1 dashed #ccc;
+}
+#sidebar > ul > li  > a {
+display: block;
+padding: 0.5em 1em;
+font-weight: bold;
+color: #489;
+}
+#sidebar > ul > li > a:hover {
+  background-color: #FFFFFF;
+}
+.widget {
+  padding: 10px;
+}
+.links > li {
+  border-bottom: 0;
+}
+.links > li > a {
+  padding: 0.5em;
+  background-color: #6AB;
+  font-weight: normal;
+  color: #FFF;
+}
+.links > li > a:hover {
+  background-color: #7BC;
+}
